@@ -17,14 +17,19 @@ def is_really_safe(line):
         return True
     
     for i in range(len(line)):
+        
         modified_report = line[:i] + line[i+1:]
+        
         if safe(modified_report):
             return True
+    
     return False
 
 
 for line in data:
+    
     new_data = [int(x) for x in line.split(' ')]
+    
     if is_really_safe(new_data):
         ans += 1
 
