@@ -23,8 +23,6 @@ second_part = data[second_split:]
 nodes = [[]] * 1000
 
 
-
-
 def add_tups(l):
 
 
@@ -38,9 +36,6 @@ def add_tups(l):
                 if x[0] == value:
                     new_node.children.append(x[1])
     
-
-      
-
 
 # for tup in first_part:
 
